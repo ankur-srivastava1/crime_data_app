@@ -22,6 +22,8 @@ def get_crime_data(city = 'SFO',
     
     where_query = date_col + ' between ' + "'"+str(start_time) + 'T00:00:00'+"'"+ ' and ' + "'"+str(end_time) + 'T00:00:00'+"'"
     
+    import pdb; pdb.set_trace()
+
     results = client.get(dataset_identifier = api_endpoint, 
                      content_type = 'json',
                      where = where_query,
